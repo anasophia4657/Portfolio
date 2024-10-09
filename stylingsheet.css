@@ -1,0 +1,550 @@
+body {
+    font-family: sans-serif;
+    color: #333;
+    background-color: #dce0e1;
+    margin: 0;
+}
+
+#navbar {
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+    background: #d3d3d6;
+    border-radius: 50px;
+    padding: 20px 10px;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-links {
+    margin-right: 25px;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links a {
+
+    text-decoration: none;
+    color: black;
+    font-size: 16pt;
+    margin-right: 15px;
+}
+
+
+#profile_picture img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    /* Ensures the image fits nicely */
+}
+
+#profile_picture {
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    margin-left: 15px;
+    gap: 15px;
+}
+
+
+#profile_picture a {
+    text-decoration: none;
+    color: black;
+    font-size: 16pt;
+}
+
+#contacts {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.main-title {
+    padding-left: 0;
+    font-size: 4rem;
+    color: #333;
+    text-align: left;
+    margin: 40px 80px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto Slab', serif;
+}
+
+#i-am {
+    margin-left: 12px;
+}
+
+#typing_animation {
+    border-right: 3px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.7s step-end infinite;
+    text-align: left;
+    padding-left: 0;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.sub_title h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto Slab', serif;
+    padding-top: 250px;
+    margin: 40px 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+    margin: 0 80px;
+}
+
+.card {
+    overflow: hidden;
+    /* Ensure rounded corners are visible */
+    border-radius: 35px;
+    /* Set the round corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+.card img {
+    max-width: 100%;
+    /* Ensures images are responsive */
+    display: block;
+    /* Removes bottom space */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for image */
+}
+
+/* Hover effect for cards */
+.card:hover img {
+    transform: scale(1.05);
+    /* Slightly enlarge the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhance shadow on hover */
+}
+
+
+
+
+body {
+    font-family: sans-serif;
+    color: #333;
+    background-color: #dce0e1;
+}
+
+.bento-flex {
+    display: flex;
+    /* Use flexbox */
+    justify-content: space-between;
+    margin: 300px auto;
+    max-width: 90%;
+    /* Allow the container to take up 90% of the page width */
+    padding: 0 250px;
+    flex-wrap: wrap;
+    /* Allow items to wrap onto the next line if necessary */
+}
+
+.box {
+    background-color: #d3d3d6;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+
+.large {
+    flex: 0 0 65%;
+    height: 300px;
+}
+
+.medium {
+    flex: 0 0 30%;
+    height: 300px;
+}
+
+.small-1,
+.small-2 {
+    flex: 0 0 180px;
+    height: 180px;
+}
+
+.small-3 {
+    flex: 1;
+    height: 180px;
+    min-width: 200px;
+}
+
+
+.medium img {
+    margin: 20px;
+    width: 85%;
+    height: auto;
+}
+
+.large h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    color: #333;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.icons-bento-box {
+    display: grid;
+    justify-content: center;
+    gap: 6px 40px;
+    margin: -6px;
+}
+
+
+.icon {
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover */
+}
+
+/* Floating animations with staggered delays and different heights */
+.icons-bento-box .icon:nth-child(1) {
+    animation: float1 3s ease-in-out infinite;
+    animation-delay: 0s;
+    /* No delay for the first icon */
+}
+
+.icons-bento-box .icon:nth-child(2) {
+    animation: float2 3s ease-in-out infinite;
+    animation-delay: 0.2s;
+    /* Slight delay for the second icon */
+}
+
+.icons-bento-box .icon:nth-child(3) {
+    animation: float3 3s ease-in-out infinite;
+    animation-delay: 0.4s;
+    /* More delay for the third icon */
+}
+
+.icons-bento-box .icon:nth-child(4) {
+    animation: float1 3s ease-in-out infinite;
+    animation-delay: 0.6s;
+    /* Slight delay for the fourth icon */
+}
+
+.icons-bento-box .icon:nth-child(5) {
+    animation: float2 3s ease-in-out infinite;
+    animation-delay: 0.8s;
+    /* More delay for the fifth icon */
+    grid-column-start: 3;
+    /* Place the 5th icon next to the 4th icon */
+}
+
+/* Hover effect for scaling and shadow */
+.icon:hover {
+    transform: scale(1.1);
+    /* Scale icon by 10% */
+}
+
+/* Floating animation keyframes with different heights */
+@keyframes float1 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+        /* Less movement for float1 */
+    }
+}
+
+@keyframes float2 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+        /* More movement for float2 */
+    }
+}
+
+@keyframes float3 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+        /* Even more movement for float3 */
+    }
+}
+
+
+.small-1 h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4rem;
+    color: #333;
+    text-align: center;
+    margin: 16px 5px -15px 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.small-1 h3 {
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.small-2 h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.09rem;
+    font-weight: 900;
+    color: #333;
+    text-align: center;
+    margin: 15px 5px -10px;
+    padding-top: 7px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.small-2 h3 {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin: 3px 10px 10px;
+    padding-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.small-3 h2 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #333;
+    text-align: center;
+    margin: 25px 5px 10px;
+    padding-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.small-3 h3 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin: 10px 0px 10px;
+    padding-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.Contact_Me {
+
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto Slab', serif;
+    padding-top: 45px;
+    margin: 40px 0px 250px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dce0e1;
+}
+
+.round-button {
+    background-color: #4e4550;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Smooth transitions for hover and click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Initial shadow */
+    outline: none;
+}
+
+
+.round-button:hover {
+    background-color: #a784af;
+    transform: scale(1.1);
+    /* Slight enlargement */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    /* Slightly larger shadow */
+}
+
+
+.round-button:active {
+    transform: scale(0.95);
+    /* Shrink button a bit */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Reduced shadow */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 150px;
+    text-align: left;
+}
+
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #a784af;
+    /* Change to your accent color */
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.social-media a img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarges the social icons on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #bbb;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+/* Works title styles */
+.works_title {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #333;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 15px;
+    justify-content: space-between;
+    margin: 0 auto;
+    justify-items: center;
+    width: 70%;
+}
+
+.squares {
+    display: inline-flex;
+    margin: 0;
+    width: 250px;
+    height: 250px;
+}
+
+.squares img {
+    max-width: 100%; /* Ensures the image takes up full space within the grid */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.squares img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+
+
+
+
+
+
