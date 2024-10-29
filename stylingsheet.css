@@ -1,5 +1,7 @@
 body {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     color: #333;
     background-color: #dce0e1;
     margin: 0;
@@ -14,6 +16,7 @@ body {
     padding: 20px 10px;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    color: #333;
 }
 
 .navbar-links {
@@ -23,9 +26,8 @@ body {
 }
 
 .navbar-links a {
-
     text-decoration: none;
-    color: black;
+    color: #333;
     font-size: 16pt;
     margin-right: 15px;
 }
@@ -49,7 +51,7 @@ body {
 
 #profile_picture a {
     text-decoration: none;
-    color: black;
+    color: #333;
     font-size: 16pt;
 }
 
@@ -373,6 +375,7 @@ body {
     font-family: 'Roboto Slab', serif;
     padding-top: 45px;
     margin: 40px 0px 250px;
+    text-decoration: none;
 }
 
 
@@ -381,6 +384,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #dce0e1;
+}
+
+.button-container a {
+    text-decoration: none;
 }
 
 .round-button {
@@ -532,19 +539,195 @@ body {
 }
 
 .squares img {
-    max-width: 100%; /* Ensures the image takes up full space within the grid */
+    max-width: 100%;
+    /* Ensures the image takes up full space within the grid */
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 .squares img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+
+/*Contact me page*/
+
+
+
+.contact-left-title h2 {
+    color: #222;
+    margin-left: 50px;
+    font-family: 'Roboto Slab';
+    font-size: 45px;
+}
+
+
+
+input,
+textarea {
+    background-color: #D3D3D6;
+    color: #333;
+    border: 2px solid #a784af;
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.name-container input {
+    width: 45%;
+}
+
+
+.subject-container {
+    display: flex;
+    width: 100%;
+
+}
+
+
+.subject-container input {
+    width: 100%;
+}
+
+
+.form-container {
+    margin-left: 50px;
+    width: 50%;
+}
+
+
+
+.message-container {
+    width: 35%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.message-container input {
+    width: 100%;
+
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #d26cba;
+    border-width: 3px;
+}
+
+
+button {
+    background-color: #4e4550;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Smooth transitions for hover and click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Initial shadow */
+    outline: none;
+    margin-left: 5px;
+}
+
+button:hover {
+    opacity: 80%;
+    background-color: #a784af;
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 
 
 
 
+/*Slide-show*/
 
 
 
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*About me Page*/
+
+.many-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    margin-left: 55px;
+    flex: 1;
+}
+
+/* Container for the text and image */
+.aboutme-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between text and image */
+}
+
+
+/* Styling for the image */
+.profile-image {
+    width: 450px; /* Set a desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+    object-fit: cover; /* Ensure it fits within the size specified */
+    margin-right: 200px;
+}

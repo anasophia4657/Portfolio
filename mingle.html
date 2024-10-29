@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mingle</title>
+    <link rel="icon" href="./images/profile_picture.png" type="profile-image">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="./stylingsheet.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="navbar">
+        <div id="profile_picture">
+            <a href="./index.html">
+                <img src="./images/profile_picture.png" alt="Profile Picture">
+            </a>
+            <a class="name-link" href="./index.html">&#128075 Hey there, I'm Sophia</a>
+        </div>
+
+
+        <div class="navbar-links">
+            <a href="./works.html">Works</a>
+            <a href="./about.html">About</a>
+            <a id="contacts" href="./contacts.html">Contacts</a>
+        </div>
+    </div>
+
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./images/Mingle/Minglescroll-06.png" alt="cover" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/Mingle/Minglescroll-10.png" alt="summary" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/Mingle/Minglescroll-07.png" alt="moodboard"style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/Mingle/Minglescroll-08.png" alt="fonts"style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/Mingle/Minglescroll-09.png" alt="icons"style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/Mingle/Minglescroll-11.png" alt="poster-mockup"style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/Mingle/Minglescroll-12.png" alt="menu"style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/Mingle/minglescroll-13.jpg" alt="girlsnight" style="height:648px;">
+        </div>
+
+        
+
+        <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+
+
+
+    <footer class="footer" style="margin-top: 250px;">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="footer-section social-media"></div>
+                <h3>Follow Me</h3>
+
+                <a href="https://www.instagram.com/sophiedesignsthingss" target="_blank">
+                    <img src="./images/SVG/instagram-icon.svg" alt="Instagram"/>
+                </a>
+
+                <a href="https://www.behance.net/anaribeiro122" target="_blank">
+                    <img src="./images/SVG/behance-icon.svg" alt="Behance">
+            
+                </a>
+                <a href="https://www.linkedin.com/in/ana-sophia-ribeiro-0189a9335"><img src="./images/SVG/linkedin-icon.svg" alt="Linked-in"></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sophia's Portfolio | Designed by Ana Sophia Ribeiro</p>
+        </div>
+    </footer>
+</body>
+
+
+</html>

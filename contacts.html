@@ -3,8 +3,11 @@
 
 <head>
     <title>Contact Me!</title>
+    <link rel="icon" href="./images/profile_picture.png" type="profile-image">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="./stylingsheet.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,29 +27,70 @@
 
         </div>
     </div>
-
+    
     <div class="Contact-Form">
-        <form action="" class="contact-left">
-            <div class="contact-left-title">
-                <h2>I Would Love to Meet You!</h2>
-                <hr>
+            <form action="" class="contact-left">
+                 <div class="contact-left-title" style="margin-left: 20px;font-size: 45px; margin-bottom: 70px;">
+                    <h2>I Would Love to Meet You!</h2>
+                    
+                 </div>
+
+                    <div class="form-container" >
+                    <form action="https://formspree.io/f/xkgnnglo">
+
+
+                    <div class="name-container">
+                        <input type="text" id="first-name" placeholder="First Name" class="contact-inputs" autocomplete="off" required>
+                        <input type="text" id="last-name" placeholder="Last Name" class="contact-inputs" autocomplete="off" required> <br>
+                    </div>
+
+                    <div class="subject-container">
+                        <input type="text" id="subject" placeholder="Subject" class="contact-inputs" autocomplete="off" required>
+                    </div>
+
+                <textarea rows="5" cols="70" name="message" id="text-area" placeholder="Tell me more! What can I help you with?" autocomplete="off" required></textarea>
+                <button type="send" id="send" onclick="sendMail()">Send</button>
+            </form>
+        </div>
+        
+       
+    </div>
+    
+
+    <footer class="footer" style="margin-top: 250px;">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contacts.html">Contacts</a></li>
+                </ul>
             </div>
-            <input type="text" name="name" placeholder="First Name" class="contact-inputs" required>
-            <input type="text" name="name" placeholder="Last Name" class="contact-inputs" required>
-            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-            <textarea rows="5" cols="60" name="message" placeholder="Your Message" autocomplete="off" required></textarea>
-            <button type="Send">Send</button>
-        </form>
 
-        <div class="contact-right">
 
+
+
+            <div class="footer-section social-media">
+                <h3>Follow Me</h3>
+
+                <a href="https://www.instagram.com/sophiedesignsthingss" target="_blank">
+                    <img src="./images/SVG/instagram-icon.svg" alt="Instagram"/>
+                </a>
+
+                <a href="https://www.behance.net/anaribeiro122" target="_blank">
+                    <img src="./images/SVG/behance-icon.svg" alt="Behance">
+            
+                </a>
+                <a href="https://www.linkedin.com/in/ana-sophia-ribeiro-0189a9335"><img src="./images/SVG/linkedin-icon.svg" alt="Linked-in"></a>
+            </div>
         </div>
 
-
-
-    </div>
-
-
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sophia's Portfolio | Designed by Ana Sophia Ribeiro</p>
+        </div>
+    </footer>
+    
 </body>
 
 

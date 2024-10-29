@@ -34,3 +34,16 @@ type();
 
 
 
+
+
+
+
+function sendMail() {
+    var firstname = $('#first-name').val();
+    var lastname = $('#last-name').val();
+    var subject = $('#subject').val();
+    var message = $('#text-area').val();
+    window.location.href = 'mail to:ribeiro4657@gmail.com subject= ' + firstname + lastname + ' (' + subject + ')' + '&body=' + message;
+};
+
+
